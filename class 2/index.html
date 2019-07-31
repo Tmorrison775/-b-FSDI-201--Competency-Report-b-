@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Pet Salon</title>
+
+    <link href="Main.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <header id="logo" class="site-header initial" alt="mylogo">
+
+        <h1 class="bannerheader">Welcome To The Pet Salon!!</h1>
+
+        <br><br><br>
+        </div>
+    </header>
+    <main class="content">
+
+        <nav id="nav" class="navigation square">
+            <a class="n" href="index.html"><img class="icon" src="img/scissors.png" alt="home">Home</a>
+            <a class="n" href="About.html" target="_blank"><img class="icon" src="img/scissors.png"
+                    alt="Local honey icon">About
+                Us</a>
+            <a class="n" href="https://www.dogtopia.com/blog/benefits-professional-dog-grooming/" target="_blank"><img
+                    class="icon" src="img/scissors.png" alt="Local honey icon">Why cut their hair?</a>
+
+
+            <a class="n" href="Gallery.html" target="_blank"><img class="icon" src="img/scissors.png"
+                    alt="Local honey icon">Gallery</a>
+            <a class="n" href="Contact.html" target="_blank"><img class="icon" src="img/scissors.png"
+                    alt="Local honey icon">Contact</a>
+        </nav>
+        <br>
+
+        <div>
+
+
+
+            <img class="Img" src="img/cat.jpg" alt="Our best work">
+
+            <br><br>
+            <div class="square">
+                <h2 class="header">Register a Pet</h2>
+                <form>
+                    <fieldset>
+                        <legend>Pet Information</legend>
+                        <label>Name: </label>
+                        <input type="text" name="name" id="name" placeholder="enter pet's name">
+
+                        <label for="PetAge">Age: </label>
+                        <input type="text" name="name" id="PetAge" placeholder="enter pet's age">
+
+                        <label for="services">Service</label>
+                        <select id="services">
+                            <option value="" disabled selected> ----- Select an option ------ </option>
+                            <option value="Shower">Shower</option>
+                            <option value="Hair Cut">Hair Cut</option>
+                            <option value="Nails cut">Nails Cut</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Owner's Information</legend>
+                        <label for="OwnerName">Owner's Name: </label>
+                        <input type="text" name="Ownername" id="OwnerName" placeholder="enter Owner's  name">
+                        <legend>Contact Phone</legend>
+                        <label for="phone">Phone number: </label>
+                        <input type="text" name="phone" id="phone" placeholder="enter Owner's  phone number">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="registerBtn" onclick="registerPet();" class="btn">
+
+                    <br>
+
+            </div>
+
+            <div class="square">
+                <h1 class="header">Search A Pet</h1>
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Service</th>
+                        <th>Owner's Name</th>
+                        <th>Contact Phone</th>
+                        <th> </th>
+                    </thead>
+
+                    <tbody id="listBody">
+
+                    </tbody>
+
+                </table>
+               
+            </div>
+            <input type="text" name="search" id="search">
+            <input type="button" value="Search" onclick="Search();" class="btn">
+        </div>
+
+
+
+
+
+
+
+
+        <div class="site-divs">
+            <h1 class="header"> Our Reviews</h1>
+            <div class="all-divs">
+
+                <div class="blog square">
+                    <h3 class="header">Comments</h3>
+                    <article class="input-blog square">
+
+                        <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores deserunt
+                            doloremque
+                            voluptatibus est?"</p>
+                    </article>
+                    <article class="input-blog square">
+
+                        <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores deserunt
+                            doloremque
+                            voluptatibus est? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, porro?"
+                        </p>
+                    </article>
+                    <article class="input-blog square">
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid culpa exercitationem sunt
+                            nesciunt nam fugiat non molestiae repellendus enim ducimus sit deserunt cum, consequuntur
+                            architecto illum reiciendis qui ullam odio facere sequi dolor recusandae ut? Voluptas
+                            adipisci quam libero atque quod similique, ducimus sed, laboriosam quisquam tempora quis,
+                            earum sit.</p>
+                    </article>
+                    <article class="input-blog square">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis mollitia id saepe eligendi
+                            molestias."</p>
+                    </article>
+                    <article class="input-blog square">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere modi laboriosam qui deleniti
+                            id, omnis dicta repudiandae, quaerat eligendi beatae dolorum minus vitae."</p>
+                    </article>
+                    <article class="input-blog square">
+                        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure cum neque cupiditate totam
+                            iusto voluptates consequuntur, odio voluptatibus ducimus eos voluptate, est nobis. Commodi
+                            enim praesentium quasi, ut quod hic?"</p>
+                    </article>
+                    <article class="input-blog square">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam eos nam tempore
+                            ipsam beatae perferendis ea, veritatis praesentium facere illo possimus, a, debitis magni
+                            fugit inventore vero!"</p>
+                    </article>
+                </div>
+
+                <section class="opinions square">
+                    <h3 class="header">Opinions</h3>
+                    <div class="post">
+
+                        <blockquote><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas, totam suscipit
+                            at eum aliquam tenetur similique? Praesentium culpa quis maxime maiores aperiam blanditiis
+                            beatae suscipit repellendus tenetur. 
+                          
+                            magnam nisi consectetur excepturi itaque consequuntur."</p></blockquote>
+
+
+                        <br><br>
+                        <h1>Written by: <em>anonymous</em></h1>
+                    </div>
+                    <div class="post">
+                        <blockquote><p> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam natus quam
+                            deleniti cum quae porro provident possimus incidunt labore veniam ut recusandae omnis
+                            eveniet architecto sint aut."</p>
+                        </blockquote>
+                        <br><br>
+                        <h3>Written by: <em>anonymous</em></h3>
+                    </div>
+                    <div class="post">
+                        <blockquote><p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, quis? Aperiam
+                            iusto mollitia quaerat explicabo, totam nihil ab labore voluptate quibusdam qui alias minus,
+                            quisquam in eius, ea quae quo iste minima tenetur voluptatem ullam. Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. "</p></blockquote>
+                        <br><br>
+                        <h3>Written by: <em>anonymous</em></h3>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer content">
+        <div id="footer">
+            <nav class="navigation square">
+                <a class="n" href="index.html"><img class="icon" src="img/scissors.png" alt="home">Home</a>
+                <a class="n" href="About.html" target="_blank"><img class="icon" src="img/scissors.png"
+                        alt="Local honey icon">About
+                    Us</a>
+                <a class="n" href="https://www.dogtopia.com/blog/benefits-professional-dog-grooming/"
+                    target="_blank"><img class="icon" src="img/scissors.png" alt="Local honey icon">Why cut their
+                    hair?</a>
+
+
+                <a class="n" href="Gallery.html" target="_blank"><img class="icon" src="img/scissors.png"
+                        alt="Local honey icon">Gallery</a>
+                <a class="n" href="Contact.html" target="_blank"><img class="icon" src="img/scissors.png"
+                        alt="Local honey icon">Contact</a>
+            </nav>
+            <br><br>
+            <div class="copyright">
+                <p>All the rights reserved &copy; The Pet Salon</p>
+            </div>
+
+
+    </footer>
+    <script src="petsalon.js"></script>
+
+
+</body>
+
+</html>

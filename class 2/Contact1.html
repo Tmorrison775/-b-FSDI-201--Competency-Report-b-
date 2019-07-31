@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Pet Salon</title>
+    <link href="Main.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <div class="site-header initial"></div>
+
+        <h2>Register a pet</h2>
+        <form>
+            <fieldset>
+                <legend> Pet information</legend>
+                <label for="PetName">Name: </label>
+                <input type="text" name="PetName" id="PetName" placeholder="Enter pet's name">
+
+                <label for="PetAge">Age:</label>
+                <input type="text"  name="PetAge" id="PetAge" placeholder="Enter pet's age">
+
+                <label for="services">Service: </label>
+                <select id="services">
+                    <option value="" disabled selected>-----Select an option -------</option>
+                    <option value="Shower">Shower</option>
+                    <option value="Hair Cut">Hair Cut</option>
+                    <option value="Nail Trim">Nail Trim</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Owner's information</legend>
+                <label for="OwnerName">Owner's name</label>
+                <input type="text" name="OwnerName" id="OwnerName" placeholder="Enter owner's name">
+                <legend>Contact Phone</legend>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter owner's phone number">
+            </fieldset>
+            <button type="button" value="submit" id="registerBtn" class="btn" onclick=registerPet()>Register</button>
+        </form>
+
+        <div>
+           
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Service</th>
+                        <th>Owner's Name</th>
+                        <th>Contact Phone</th>
+                        <th> </th>
+                        </thead>
+
+                    <tbody id="listBody">
+
+                    </tbody>
+                    
+                </table>
+        </div>
+        
+        <br><br>
+
+        <div class="all-divs">
+            <div class="site-divs">
+                <button id="fb" class="btn-lg"><a href="www.facebook.com">Click Here To Visit Our Facebook
+                        Page!</a></button>
+
+
+<script src="petsalon.js"></script>
+</body>
+
+</header>
+
+
+
+
+</main>
+
+<footer class="footer content">
+    <div>
+        <nav class="navigation">
+            <a href="About.html" target="_blank"><img class="icon" src="img/Icon.jpg" alt="Local honey icon">About
+                Us</a>
+            <a href="https://www.google.com/search?q=local+honey+benefits&oq=local+honey+be&aqs=chrome.0.0j69i57j0l4.7843j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank"><img class="icon" src="img/Icon.jpg" alt="Local honey icon">Local
+                Honey Benefits</a>
+            <a href="#ourmission"><img class="icon" src="img/Icon.jpg" alt="Local honey icon">Our Mission</a>
+            </li>
+            <a href="Gallery.html" target="_blank"><img class="icon" src="img/Icon.jpg"
+                    alt="Local honey icon">Gallery</a>
+            <a href="Contact.html" target="_blank"><img class="icon" src="img/Icon.jpg"
+                    alt="Local honey icon">Contact</a>
+        </nav>
+        <br><br>
+        <div class="copyright">
+            <p>All the rights reserved &copy; Big Moose Honey</p>
+        </div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
